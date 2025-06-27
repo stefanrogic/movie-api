@@ -34,9 +34,9 @@ public class UserController {
         return userService.getUsers();
     }
 
-    // This method handles GET requests to /user?id=... and returns a single user by their ID
-    @GetMapping("/user")
-    public User getUser(@RequestParam Integer id) {
+    // This method handles GET requests to /user/{id} and returns a single user by their ID
+    @GetMapping("/user/{id}")
+    public User getUser(@PathVariable Integer id) {
         // Calls the UserService to get a user by ID. The result is wrapped in an Optional to handle the case where the user might not exist.
         Optional<User> user = userService.getUser(id);
 
