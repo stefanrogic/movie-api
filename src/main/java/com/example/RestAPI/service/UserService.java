@@ -46,10 +46,17 @@ public class UserService {
         return userList;
     }
 
+    // This method adds a new user to the list.
     public void addUser(User user) {
         userList.add(user);
     }
 
+    // This method updates an existing user in the list.
+    public void updateUser(Integer id, User user) {
+        userList.set(id, user);
+    }
+
+    // This method removes a user from the list.
     public void removeUser(Integer id) {
         userList.removeIf(user -> user.getId() == id);
     }

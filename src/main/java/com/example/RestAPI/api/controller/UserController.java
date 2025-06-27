@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
+import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.Optional;
 import java.util.List;
@@ -53,6 +53,12 @@ public class UserController {
     @PostMapping("/users")
     public void addUser(@RequestBody User user) {
         userService.addUser(user);
+    }
+
+    // This method handles PUT requests to /users/{id} and updates a user by their ID
+    @PutMapping("/users/{id}")
+    public void updateUser(@PathVariable Integer id, @RequestBody User user) {
+        userService.updateUser(id, user);
     }
 
     // This method handles DELETE requests to /users/{id} and removes a user by their ID
