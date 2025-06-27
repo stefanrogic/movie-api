@@ -55,6 +55,7 @@ public class UserController {
         userService.addUser(user);
     }
 
+    // This method handles DELETE requests to /users/{id} and removes a user by their ID
     @DeleteMapping("/users/{id}")
     public void removeUser(@PathVariable Integer id) {
         userService.removeUser(id);
