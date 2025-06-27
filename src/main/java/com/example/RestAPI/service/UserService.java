@@ -19,14 +19,33 @@ public class UserService {
         // Initialize the userList as an empty ArrayList.
         userList = new ArrayList<>();
 
-        // Create some sample User objects with id, name, age, and email.
-        User user1 = new User(0, "Admin", 29, "admin@admin.com");
-        User user2 = new User(1, "Jane", 31, "jane@mail.com");
-        User user3 = new User(2, "John", 25, "john@mail.com");
-        User user4 = new User(3, "Jimmy", 45, "jimmy@mail.com");
-
-        // Add all the sample users to the userList.
-        userList.addAll(Arrays.asList(user1,user2,user3,user4));
+        // Add users
+        userList.add(new User(0, "Admin", 29, "admin@admin.com"));
+        userList.add(new User(1, "Jane", 31, "jane@mail.com"));
+        userList.add(new User(2, "John", 25, "john@mail.com"));
+        userList.add(new User(3, "Jimmy", 45, "jimmy@mail.com"));
+        userList.add(new User(4, "Alice", 22, "alice@mail.com"));
+        userList.add(new User(5, "Bob", 34, "bob@mail.com"));
+        userList.add(new User(6, "Charlie", 28, "charlie@mail.com"));
+        userList.add(new User(7, "Diana", 27, "diana@mail.com"));
+        userList.add(new User(8, "Eve", 30, "eve@mail.com"));
+        userList.add(new User(9, "Frank", 41, "frank@mail.com"));
+        userList.add(new User(10, "Grace", 36, "grace@mail.com"));
+        userList.add(new User(11, "Hank", 24, "hank@mail.com"));
+        userList.add(new User(12, "Ivy", 33, "ivy@mail.com"));
+        userList.add(new User(13, "Jack", 26, "jack@mail.com"));
+        userList.add(new User(14, "Karen", 38, "karen@mail.com"));
+        userList.add(new User(15, "Leo", 29, "leo@mail.com"));
+        userList.add(new User(16, "Mona", 32, "mona@mail.com"));
+        userList.add(new User(17, "Nina", 23, "nina@mail.com"));
+        userList.add(new User(18, "Oscar", 40, "oscar@mail.com"));
+        userList.add(new User(19, "Paul", 35, "paul@mail.com"));
+        userList.add(new User(20, "Quinn", 31, "quinn@mail.com"));
+        userList.add(new User(21, "Rita", 28, "rita@mail.com"));
+        userList.add(new User(22, "Sam", 37, "sam@mail.com"));
+        userList.add(new User(23, "Tina", 25, "tina@mail.com"));
+        userList.add(new User(24, "Uma", 39, "uma@mail.com"));
+        userList.add(new User(25, "Vince", 27, "vince@mail.com"));
     }
 
     // This method tries to find a user by their ID.
