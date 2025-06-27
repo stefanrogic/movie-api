@@ -45,4 +45,12 @@ public class UserService {
     public List<User> getUsers() {
         return userList;
     }
+
+    public void addUser(User user) {
+        userList.add(user);
+    }
+
+    public void removeUser(Integer id) {
+        userList.removeIf(user -> user.getId() == id);
+    }
 }
