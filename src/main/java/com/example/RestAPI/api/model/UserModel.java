@@ -1,6 +1,6 @@
 package com.example.RestAPI.api.model;
 
-public class User {
+public class UserModel {
     private int id;
     private String name;
     private int age;
@@ -8,7 +8,7 @@ public class User {
 
     // Constructor for User. This is called when you create a new User object.
     // It sets the id, name, age, and email fields based on the values you provide.
-    public User(int id, String name, int age, String email) {
+    public UserModel(int id, String name, int age, String email) {
         this.id = id;
         this.name = name;
         this.age = age;
