@@ -19,7 +19,7 @@ A simple REST API for managing movies, built with Spring Boot.
    ```
    The API will be available at `http://localhost:8080/api/v1`.
 
-## Download Release
+## Download
 
 You can download the latest release JAR from the [GitHub Releases page](https://github.com/stefanrogic/movie-api/releases).
 
