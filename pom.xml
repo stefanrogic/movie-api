@@ -43,6 +43,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>MovieAPI-v1.0.0-SNAPSHOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -50,5 +51,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

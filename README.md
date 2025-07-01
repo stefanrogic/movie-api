@@ -2,14 +2,19 @@
 
 A simple REST API for managing movies, built with Spring Boot.
 
-## How to Run
+## How to Build and Run
 
-1. Make sure you have Java and Maven installed.
-2. In the project directory, run:
+1. **Build the JAR file:**
    ```
-   mvn spring-boot:run
+   mvn clean package
    ```
-3. The API will be available at `http://localhost:8080/api/v1`.
+   This will create a JAR file in the `target/` directory (e.g., `target/MovieAPI-v1.0.0-SNAPSHOT.jar`).
+
+2. **Run the JAR file:**
+   ```
+   java -jar target/MovieAPI-v1.0.0-SNAPSHOT.jar
+   ```
+   The API will be available at `http://localhost:8080/api/v1`.
 
 ## Endpoints
 
