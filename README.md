@@ -22,16 +22,24 @@ A simple REST API for managing movies, built with Spring Boot.
 ## Movie JSON Example
 ```json
 {
-  "title": "Interstellar",
-  "director": "Christopher Nolan",
-  "year": 2014,
-  "genre": "Sci-Fi",
-  "actors": [
-    { "name": "Matthew McConaughey", "role": "Cooper" },
-    { "name": "Anne Hathaway", "role": "Brand" }
-  ],
-  "quotes": [
-    "Love is the one thing we're capable of perceiving that transcends dimensions of time and space."
-  ]
+    "id": 0,
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "actors": [
+        {
+            "name": "Matthew McConaughey",
+            "role": "Cooper"
+        },
+        {
+            "name": "Anne Hathaway",
+            "role": "Brand"
+        }
+    ],
+    "quotes": [
+        "Love is the one thing we're capable of perceiving that transcends dimensions of time and space.",
+        "Do not go gentle into that good night."
+    ]
 }
 ``` 
