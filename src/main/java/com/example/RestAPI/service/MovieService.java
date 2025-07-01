@@ -18,7 +18,7 @@ public class MovieService {
         // Initialize the movieList as an empty ArrayList.
         movieList = new ArrayList<>();
 
-        // Add movies with actors and their roles
+        // Add movies
         movieList.add(new MovieModel(0, "The Shawshank Redemption", "Frank Darabont", 1994, "Drama", Arrays.asList(
             new MovieModel.ActorRole("Tim Robbins", "Andy Dufresne"),
             new MovieModel.ActorRole("Morgan Freeman", "Ellis Boyd 'Red' Redding"),

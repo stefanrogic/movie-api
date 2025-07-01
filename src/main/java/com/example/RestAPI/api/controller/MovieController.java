@@ -19,7 +19,7 @@ import java.util.List;
 
 // This annotation tells Spring that this class will handle REST API requests
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 @CrossOrigin(origins = "*") // Allow all origins for development
 public class MovieController {
     // This field holds a reference to the MovieService, which provides movie-related operations
@@ -54,14 +54,12 @@ public class MovieController {
     }
 
     // This method handles POST requests to /movies and adds a new movie
-    // !FIXME: There should be validation here
     @PostMapping("/movies")
     public void addMovie(@RequestBody MovieModel movie) {
         movieService.addMovie(movie);
     }
 
     // This method handles PUT requests to /movies/{id} and updates a movie by its ID
-    // !FIXME: There should be validation here
     @PutMapping("/movies/{id}")
     public void updateMovie(@PathVariable Integer id, @RequestBody MovieModel movie) {
         movieService.updateMovie(id, movie);
