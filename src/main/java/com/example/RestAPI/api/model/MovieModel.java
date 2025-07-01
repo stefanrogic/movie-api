@@ -1,20 +1,50 @@
 package com.example.RestAPI.api.model;
 
+import java.util.List;
+
 public class MovieModel {
     private int id;
     private String title;
     private String director;
     private int year;
     private String genre;
+    private List<ActorRole> actors;
+
+    public static class ActorRole {
+        private String name;
+        private String role;
+
+        public ActorRole(String name, String role) {
+            this.name = name;
+            this.role = role;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getRole() {
+            return role;
+        }
+
+        public void setRole(String role) {
+            this.role = role;
+        }
+    }
 
     // Constructor for Movie. This is called when you create a new Movie object.
-    // It sets the id, title, director, year, and genre fields based on the values you provide.
-    public MovieModel(int id, String title, String director, int year, String genre) {
+    // It sets the id, title, director, year, genre, and actors fields based on the values you provide.
+    public MovieModel(int id, String title, String director, int year, String genre, List<ActorRole> actors) {
         this.id = id;
         this.title = title;
         this.director = director;
         this.year = year;
         this.genre = genre;
+        this.actors = actors;
     }
 
     // Getter method for the id field. Returns the movie's id.
@@ -65,5 +95,13 @@ public class MovieModel {
     // Setter method for the genre field. Allows you to change the movie's genre.
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public List<ActorRole> getActors() {
+        return actors;
+    }
+
+    public void setActors(List<ActorRole> actors) {
+        this.actors = actors;
     }
 }
