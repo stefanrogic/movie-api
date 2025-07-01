@@ -15,7 +15,7 @@ A simple REST API for managing movies, built with Spring Boot.
 
 2. **Run the JAR file:**
    ```
-   java -jar target/MovieAPI-v1.0.0-SNAPSHOT.jar
+   java -jar target/MovieAPI-<version>.jar
    ```
    The API will be available at `http://localhost:8080/api/v1`.
 
@@ -29,7 +29,8 @@ You can download the latest release JAR from the [GitHub Releases page](https://
    ```
    java -jar MovieAPI-<version>.jar
    ```
-
+   The API will be available at `http://localhost:8080/api/v1`.
+   
 ## Endpoints
 
 - `GET /api/v1/movies` — List all movies
