@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
 
 @Service
 public class MovieService {
@@ -129,14 +131,31 @@ public class MovieService {
     }
 
     // This method returns the next available movie ID.
+    // private int getNextId() {
+    //     int maxId = -1;
+
+    //     for (MovieModel movie : movieList) {
+    //         if (movie.getId() > maxId) {
+    //             maxId = movie.getId();
+    //         }
+    //     }
+        
+    //     return maxId + 1;
+    // }
+
+    // Size could be used but it wouldn't work if we delete a movie.
     private int getNextId() {
-        int maxId = -1;
+        // Collect all current IDs
+        Set<Integer> usedIds = new HashSet<>();
         for (MovieModel movie : movieList) {
-            if (movie.getId() > maxId) {
-                maxId = movie.getId();
-            }
+            usedIds.add(movie.getId());
         }
-        return maxId + 1;
+        // Find the smallest unused ID
+        int nextId = 0;
+        while (usedIds.contains(nextId)) {
+            nextId++;
+        }
+        return nextId;
     }
 
     // This method adds a new movie to the list.
