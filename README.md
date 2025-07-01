@@ -7,7 +7,7 @@ A simple REST API for managing movies, built with Spring Boot.
 1. Make sure you have Java and Maven installed.
 2. In the project directory, run:
    ```
-   ./mvnw spring-boot:run
+   mvn spring-boot:run
    ```
 3. The API will be available at `http://localhost:8080/api/v1`.
 
