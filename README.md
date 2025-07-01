@@ -11,7 +11,7 @@ A simple REST API for managing movies, built with Spring Boot.
    ```
    mvn clean package
    ```
-   This will create a JAR file in the `target/` directory (e.g., `target/MovieAPI-v1.0.0-SNAPSHOT.jar`).
+   This will create a JAR file in the `target/` directory (e.g., `target/MovieAPI-<version>.jar`).
 
 2. **Run the JAR file:**
    ```
