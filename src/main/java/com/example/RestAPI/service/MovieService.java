@@ -88,8 +88,20 @@ public class MovieService {
         return movieList;
     }
 
+    // This method returns the next available movie ID.
+    private int getNextId() {
+        int maxId = -1;
+        for (MovieModel movie : movieList) {
+            if (movie.getId() > maxId) {
+                maxId = movie.getId();
+            }
+        }
+        return maxId + 1;
+    }
+
     // This method adds a new movie to the list.
     public void addMovie(MovieModel movie) {
+        movie.setId(getNextId());
         movieList.add(movie);
     }
 
