@@ -9,7 +9,9 @@ public class MovieModel {
     private int year;
     private String genre;
     private List<ActorRole> actors;
+    private List<String> quotes;
 
+    // This is a nested class that represents an actor and their role in a movie.
     public static class ActorRole {
         private String name;
         private String role;
@@ -37,14 +39,15 @@ public class MovieModel {
     }
 
     // Constructor for Movie. This is called when you create a new Movie object.
-    // It sets the id, title, director, year, genre, and actors fields based on the values you provide.
-    public MovieModel(int id, String title, String director, int year, String genre, List<ActorRole> actors) {
+    // It sets the id, title, director, year, genre, actors, and quotes fields based on the values you provide.
+    public MovieModel(int id, String title, String director, int year, String genre, List<ActorRole> actors, List<String> quotes) {
         this.id = id;
         this.title = title;
         this.director = director;
         this.year = year;
         this.genre = genre;
         this.actors = actors;
+        this.quotes = quotes;
     }
 
     // Getter method for the id field. Returns the movie's id.
@@ -103,5 +106,13 @@ public class MovieModel {
 
     public void setActors(List<ActorRole> actors) {
         this.actors = actors;
+    }
+
+    public List<String> getQuotes() {
+        return quotes;
+    }
+
+    public void setQuotes(List<String> quotes) {
+        this.quotes = quotes;
     }
 }
