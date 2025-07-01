@@ -54,12 +54,14 @@ public class UserController {
     }
 
     // This method handles POST requests to /users and adds a new user
+    // !FIXME: There should be validation here
     @PostMapping("/users")
     public void addUser(@RequestBody UserModel user) {
         userService.addUser(user);
     }
 
     // This method handles PUT requests to /users/{id} and updates a user by their ID
+    // !FIXME: There should be validation here
     @PutMapping("/users/{id}")
     public void updateUser(@PathVariable Integer id, @RequestBody UserModel user) {
         userService.updateUser(id, user);
