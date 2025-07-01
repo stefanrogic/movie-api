@@ -1,5 +1,8 @@
 # Movie API
 
+[![Release](https://img.shields.io/github/v/release/stefanrogic/movie-api?include_prereleases&sort=semver)](https://github.com/stefanrogic/movie-api/releases)
+[![Java](https://img.shields.io/badge/Java-24-blue.svg)]()
+
 A simple REST API for managing movies, built with Spring Boot.
 
 ## How to Build and Run
