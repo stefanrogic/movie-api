@@ -5,6 +5,10 @@
 
 A simple REST API for managing movies, built with Spring Boot.
 
+## Requirements
+
+- JDK 24
+
 ## How to Build and Run
 
 1. **Build the JAR file:**
