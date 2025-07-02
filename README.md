@@ -9,8 +9,8 @@ A simple REST API for managing movies, built with Spring Boot.
 
 - JDK 24
 
-**You can download and install JDK 24 from the [official OpenJDK website](https://jdk.java.net/24/).**
-**Make sure to set your JAVA_HOME environment variable to point to your JDK 24 installation.**
+   **You can download and install JDK 24 from the [official OpenJDK website](https://jdk.java.net/24/).**
+   **Make sure to set your JAVA_HOME environment variable to point to your JDK 24 installation.**
 
 ## Build and Run
 
