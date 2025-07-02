@@ -1,4 +1,4 @@
-package com.example.RestAPI.api.model;
+package com.duvendir.MovieAPI.api.model;
 
 import java.util.List;
 

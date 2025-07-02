@@ -1,6 +1,6 @@
-package com.example.RestAPI.service;
-import com.example.RestAPI.api.model.MovieModel;
+package com.duvendir.MovieAPI.service;
 
+import com.duvendir.MovieAPI.api.model.MovieModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

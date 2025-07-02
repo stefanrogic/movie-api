@@ -8,11 +8,11 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>RestAPI</artifactId>
+	<groupId>com.duvendir</groupId>
+	<artifactId>MovieAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RestAPI</name>
-	<description>Demo project for Spring Boot</description>
+	<name>MovieAPI</name>
+	<description>Rest API for my favorite movies</description>
 	<url/>
 	<licenses>
 		<license/>
