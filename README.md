@@ -9,7 +9,7 @@ A simple REST API for managing movies, built with Spring Boot.
 
 1. **Build the JAR file:**
    ```
-   mvn clean package
+   ./mvnw clean package
    ```
    This will create a JAR file in the `target/` directory (e.g., `target/MovieAPI-<version>.jar`).
 
