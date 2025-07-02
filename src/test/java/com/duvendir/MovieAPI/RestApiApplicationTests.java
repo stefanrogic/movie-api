@@ -1,4 +1,4 @@
-package com.example.RestAPI;
+package com.duvendir.MovieAPI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
