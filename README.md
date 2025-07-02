@@ -8,8 +8,10 @@ A simple REST API for managing movies, built with Spring Boot.
 ## Requirements
 
 - JDK 24
+  - You can download and install JDK 24 from the [official OpenJDK website](https://jdk.java.net/24/).
+  - Make sure to set your JAVA_HOME environment variable to point to your JDK 24 installation.
 
-## How to Build and Run
+## Build and Run
 
 1. **Build the JAR file:**
    ```
