@@ -27,9 +27,9 @@ A simple REST API for managing movies, built with Spring Boot.
 
 You can download the latest release JAR from the [GitHub Releases page](https://github.com/stefanrogic/movie-api/releases).
 
-1. Go to the Releases section of this repository.
-2. Download the latest `MovieAPI-<version>.jar` file.
-3. Run it with:
+1. **Go to the Releases section of this repository.
+2. **Download the latest `MovieAPI-<version>.jar` file.
+3. **Run it with:
    ```
    java -jar MovieAPI-<version>.jar
    ```
